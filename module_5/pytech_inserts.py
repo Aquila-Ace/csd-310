@@ -9,24 +9,24 @@ fred = {
 }
 fred_student_id = db.students.insert_one(fred).inserted_id
 
-wilma = {
-    "first_name": "Wilma",
-    "last_name": "Flintstone",
+barney = {
+    "first_name": "Barney",
+    "last_name": "Rubble",
     "student_id": "1008"
 }
-wilma_student_id = db.students.insert_one(wilma).inserted_id
+barney_student_id = db.students.insert_one(barney).inserted_id
 
-pebbles = {
-    "first_name": "Pebbles",
-    "last_name": "Flintstone",
+george = {
+    "first_name": "George",
+    "last_name": "Slate",
     "student_id": "1009"
 }
-pebbles_student_id = db.students.insert_one(pebbles).inserted_id
+george_student_id = db.students.insert_one(george).inserted_id
 
 print("-- Insert Statements --")
 print(f"Inserted student record Fred Flintstone into the students collection with document_id {fred_student_id}")
-print(f"Inserted student record Wilma Flintstone into the students collection with document_id {wilma_student_id}")
-print(f"Inserted student record Pebbles Flintstone into the students collection with document_id {pebbles_student_id}")
+print(f"Inserted student record Barney Rubble into the students collection with document_id {barney_student_id}")
+print(f"Inserted student record George Slate into the students collection with document_id {george_student_id}")
 again = input("\n\nEnd of program, press any key to exit...")
 if again:
   quit()
