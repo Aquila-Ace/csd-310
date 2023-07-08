@@ -17,3 +17,7 @@ print("\n\n-- DISPLAYING STUDENT DOCUMENT FROM find_one() QUERY --")
 print(f"Student ID: {doc['student_id']}")
 print(f"First Name: {doc['first_name']}")
 print(f"Last Name: {doc['last_name']}")
+
+again = input("\n\nEnd of program, press any key to exit...")
+if again:
+  quit()
