@@ -9,8 +9,7 @@ print("-- DISPLAYING STUDENTS DOCUMENTS FROM find() QUERY --")
 for x,y,z in zip(docs,docs2,docs3):
     print(f"Student ID: {x}")
     print(f"First Name: {y}")
-    print(f"Last Name: {z}")
-    print()
+    print(f"Last Name: {z}\n")
 
 doc = db.students.find_one({"student_id": "1007"})
 print("\n\n-- DISPLAYING STUDENT DOCUMENT FROM find_one() QUERY --")
