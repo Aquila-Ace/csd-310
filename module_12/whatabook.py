@@ -16,7 +16,6 @@ config = {
     "raise_on_warnings": True
 }
 
-
 # Function for displaying the Main Menu
 # Multi-line printing format from BowlOfRed
 # at URL: https://discuss.python.org/t/pythonic-way-of-printing-multi-line-strings/19681
@@ -37,7 +36,6 @@ def show_menu():
                   "\nPlease Try Again...")
         show_menu()
 
-
 # Function for displaying all Books
 def show_books(_cursor):
     
@@ -53,7 +51,6 @@ def show_books(_cursor):
               "\nDetails: {}\n"
               .format(book[1], book[2], book[3]))
 
-
 # Function for displaying all Locations
 def show_locations(_cursor):
 
@@ -67,7 +64,6 @@ def show_locations(_cursor):
         print("Location {}: {}"
               .format(location[0], location[1]))
         print("(Open 8am - 6pm At All Available Locations)")
-
 
 # Function for validating Users by their IDs
 def validate_user():
@@ -86,7 +82,6 @@ def validate_user():
               "\nPlease Try Again...")
         validate_user()
 
-
 # Function for displaying the User Menu
 def show_account_menu():
     try:
@@ -102,7 +97,6 @@ def show_account_menu():
         print("\nThere Is No Path This Way"
                   "\nPlease Try Again...")
         show_account_menu()
-
 
 # Function for displaying a User's Wishlist
 # Inner Join Query format as provided by Professor Haas
@@ -124,7 +118,6 @@ def show_wishlist(_cursor, _user_id):
         print("Book Name: {}"
               "\nAuthor: {}\n"
               .format(book[4], book[5]))
-
 
 # Function for displaying all Books not already in the User's Wishlist
 def show_books_to_add(_cursor, _user_id):
@@ -149,7 +142,6 @@ def show_books_to_add(_cursor, _user_id):
 def add_book_to_wishlist(_cursor, _user_id, _book_id):
     query5 = ("INSERT INTO wishlist(user_id, book_id) VALUES({}, {})".format(_user_id, _book_id))
     _cursor.execute(query5)
-
 
 
 
